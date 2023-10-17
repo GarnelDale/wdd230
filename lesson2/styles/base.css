@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+    font-family: "Rubik", Helvetica, sans-serif;
+    background: lightblue;
+    max-width: 960px;
+}
+
+header {
+    padding-left: 15px;
+    background: tan;
+    border-bottom: 2px solid black;
+    grid-column: 1/4;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 15px;
+}
+
+main {
+    display: grid;
+    grid-template: auto 1fr / 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.card {
+    grid-row: 2/3;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 1px;
+}
+
+img {
+    height: 400px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+h2 {
+    margin: 0px;
+    padding-bottom: none;
+}
+
+a {
+    color: brown;
+}

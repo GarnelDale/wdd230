@@ -25,6 +25,10 @@ body {
     list-style-type: none;
   }
 
+  nav a {
+    display: block;
+  }
+
   header {
     display: inline-flex;
     gap: 25px;
