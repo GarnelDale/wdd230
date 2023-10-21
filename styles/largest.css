@@ -1,4 +1,4 @@
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
     section {
         display: block;
     }

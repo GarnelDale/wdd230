@@ -1,0 +1,17 @@
+@media screen and (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    #visual-hierarchy {
+        grid-column: 1/2;
+    }
+    
+    #hicks-law {
+        grid-column: 1/2;
+    }
+    
+    #white-space {
+        grid-column: 1/2;
+    }
+}
