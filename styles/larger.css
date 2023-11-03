@@ -1,10 +1,15 @@
-@media screen and (min-width: 640) {
-    nav ul {
-        display: flex;
-        border: 10px dashed hotpink;
+@media screen and (min-width: 640px) {
+    .navigation {
+        flex-direction: row;
+        padding-right: 40px;
     }
 
-    nav ul li {
+    .navigation li {
+        display: block;
         flex: 1 1 100%;
     }
-}
+
+    #menu {
+        display: none;
+    }
+} 

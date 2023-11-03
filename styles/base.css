@@ -1,18 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://unpkg.com/css-aspect-ratio@1/css-aspect-ratio.css");
 
 body {
     font-family: "Poppins", Helvetica, sans-serif;
     display: grid;
     height: 100vh;
-    grid-template: auto auto 1fr auto / 50px 1fr 50px;
+    grid-template: auto auto 1fr auto auto / 50px 1fr 50px;
   }
   
   header {
     background: olivedrab;
     padding: 2rem;
     grid-column: 1 / 4;
+    display: inline-flex;
+    gap: 25px;
   }
   
+  header img {
+    width: 150px; 
+    --aspect-ratio-w: 4; 
+    --aspect-ratio-h: 3;
+  }
+
+  h1 {
+    padding-top: 25px;
+  }
+
   nav {
     background: wheat;
     grid-row: 2 / 3;
@@ -21,26 +34,49 @@ body {
     text-align: center;
   }
 
-  ul li {
-    list-style-type: none;
+  .navigation {
+    display: flex;
+    flex-direction: column;
   }
 
-  nav a {
+  .navigation li a {
     display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
   }
 
-  header {
-    display: inline-flex;
-    gap: 25px;
+  .navigation li {
+    list-style-type: none;
+    display: none;
   }
 
-  header img {
-    height: 150px;
-    width: 120px;
+  .navigation li:hover {
+    background-color: olivedrab;
+    font-weight: 700;
   }
 
-  h1 {
-    padding-top: 25px;
+  #menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+  }
+
+  #menu::before {
+    content: "≡";
+  }
+
+  #menu.show::before {
+    content: "X";
+  }
+
+  .show li {
+    display: block;
   }
 
   main {
@@ -74,6 +110,15 @@ body {
     text-align: center;
     margin: 0;
     border-radius: 3px 3px 0 0;
+  }
+
+  iframe {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    height: 450px;
+    width: 100%;
+    display: block;
+    border: 0;
   }
 
   footer {

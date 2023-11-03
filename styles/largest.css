@@ -1,5 +1,37 @@
-@media screen and (min-width: 1080px) {
-    section {
-        display: block;
+@media screen and (min-width: 1000px) {
+    body {
+        grid-template: auto auto 1fr auto / 50px 1fr 1fr 50px;
+    }
+
+    main {
+        grid-column: 2/4;
+    }
+
+    header {
+        grid-column: 1/5;
+    }
+
+    nav {
+        grid-column: 1/5;
+    }
+
+    footer {
+        grid-column: 1/5;
+    }
+
+    iframe {
+        grid-column: 2/4;
+    }
+
+    #learning {
+        display: inline-flex;
+        flex-direction: column;
+        grid-column: 2/3;
+    }
+    
+    #info {
+        display: inline-flex;
+        flex-direction: column;
+        grid-column: 3/4;
     }
 }
