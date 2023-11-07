@@ -9,17 +9,22 @@ header {
     background-color: #7b2210;
 }
 
+header, footer {
+    color: #feeed4;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Magic-Cards-Normal", Times, serif;
     padding-left: 20px;
     padding-top: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-kerning: 1em;
 }
 
-main {
+body {
     font-family: "Nanum Gothic", Century, sans-serif;
-    background-color: #e0b09f;
+    background-color: #feeed4;
 }
 
 p {
@@ -32,6 +37,15 @@ img {
 
 #desktop {
     width: 800px;
+}
+
+#magic {
+    font-family: "Magic-Cards-Normal", Times, serif;
+}
+
+#red {
+     background-color:#7b2210;
+     color:#feeed4;
 }
 
 footer {
