@@ -33,7 +33,6 @@ function displayProphets(prophets){
         section.innerHTML = sectionHTML;
         cards.appendChild(section);
     });
-
 }
 
 getProphetData();
