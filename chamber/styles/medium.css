@@ -1,5 +1,9 @@
 @media screen and (min-width: 640px) 
 {
+    header img {
+        width: 300px;
+    }
+
     .navigation {
         flex-direction: row;
     }
@@ -14,7 +18,7 @@
     }
 
     main {
-        grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
+        grid-template: auto 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
     }
 
     #hero {
