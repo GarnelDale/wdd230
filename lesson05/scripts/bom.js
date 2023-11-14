@@ -3,7 +3,7 @@ const topTen = document.querySelector("#list");
 const input = document.querySelector("#favchap");
 
 addChapter.addEventListener('click', ()=>{
-    if (input.value = '') {
+    if (input.value === '') {
         input.focus();
     }
     else {
@@ -13,13 +13,12 @@ addChapter.addEventListener('click', ()=>{
         deleteButton.textContent = '❌';
         li.append(deleteButton);
         topTen.append(li);
-    }
-});
 
-deleteButton.addEventListener('click', ()=>{
-    topTen.removeChild(li);
+        deleteButton.addEventListener('click', ()=>{
+            topTen.removeChild(li);
+            input.focus();
+        });
+    }
+    input.value = '';
     input.focus();
 });
-
-input.focus();
-input.value = '';
