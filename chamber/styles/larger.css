@@ -1,3 +1,6 @@
-@media screen and (min-width: 1000px) {
-    
+@media screen and (min-width: 900px) {
+    main {
+        grid-column: 2/5;
+        max-width: 800px;
+    }
 }

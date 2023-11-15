@@ -18,11 +18,16 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/redoran-banner.webp" alt="Redoran House banner">
         <h1>Ald'ruhn Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="toggle orb"></span>
+        </label>
     </header>
     <nav>
         <button id="menu"></button>
@@ -40,12 +45,35 @@
         <button>City Map</button>
         <section class="card" id="events">
             <h2>Current Events</h2>
+            <p>Drinar Varyon removed from chamber membership following arrest for smuggling of dwemer artifacts.</p>
         </section>
         <section class="card" id="weather">
             <h2>Weather</h2>
+            <p>Ash storm for the forseeable future, prepare to cover your face if you are travelling.</p>
         </section>
         <section class="card" id="spotlights">
             <h2>Major Members Spotlight</h2>
+            <section class="card">
+                <h3>Ald Skar Inn</h3>
+                <p>Finest inn beyond Skar</p>
+                <p>ald.skar@redoran.com</p>
+                <p># Ald-Ruhn</p>
+                <a href="https://en.uesp.net/wiki/Morrowind:Ald_Skar_Inn">Website</a>
+            </section>
+            <section class="card">
+                <h3>Selaro Smithy</h3>
+                <p>Redoran Forging at work</p>
+                <p>selaro.smithy@redoran.com</p>
+                <p># 111-2112</p>
+                <a href="https://en.uesp.net/wiki/Morrowind:Dandera_Selaro:_Smith">Website</a>
+            </section>
+            <section class="card">
+                <h3>Vari Enchanting</h3>
+                <p>Magic Clothing and Tools</p>
+                <p>vari.enchanting@redoran.com</p>
+                <p># 999-9665</p>
+                <a href="https://en.uesp.net/wiki/Morrowind:Llether_Vari">Website</a>
+            </section>
         </section>
     </main>
     <footer>
