@@ -3,33 +3,29 @@
 
 body {
     font-family: "Poppins", Helvetica, sans-serif;
-    display: grid;
-    height: 100vh;
-    grid-template: auto auto 1fr auto auto / 50px 1fr 50px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  header {
+  header section {
+    display: flex;
+    flex-direction: row;
     background: olivedrab;
-    padding: 2rem;
-    grid-column: 1 / 4;
-    display: inline-flex;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
   }
   
-  header img {
-    width: 150px; 
-    --aspect-ratio-w: 4; 
-    --aspect-ratio-h: 3;
+  header section img {
+    display: block;
+    margin: 1rem;
   }
 
   h1 {
-    padding-top: 25px;
+    text-align: center;
+    width: 100%;
   }
 
   nav {
-    background: wheat;
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
     font-size: 24px;
     text-align: center;
   }
@@ -45,6 +41,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: black;
+    background: wheat;
   }
 
   .navigation li {
@@ -81,12 +78,20 @@ body {
 
   main {
     background: white;
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
     text-align: center;
+    max-width: 960px;
   }
   
-  section {
+  .hero {
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  main section {
     margin: 2px;
     border: 2px solid black;
     border-radius:5px;
@@ -113,8 +118,6 @@ body {
   }
 
   iframe {
-    grid-row: 4/5;
-    grid-column: 2/3;
     height: 450px;
     width: 100%;
     display: block;
@@ -123,7 +126,7 @@ body {
 
   footer {
     background: wheat;
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: center;
-    grid-column: 1 / 4;
+    width: 100%;
   }
