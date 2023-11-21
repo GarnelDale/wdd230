@@ -1,9 +1,5 @@
-@media screen and (min-width: 640px) 
+@media screen and (min-width: 900px) 
 {
-    header img {
-        width: 300px;
-    }
-
     nav {
         border: 1px solid black;
     }
@@ -20,30 +16,34 @@
     #menu {
         display: none;
     }
+  
+    #herolabel::before {
+        content: "Medium ";
+      }
 
     main {
-        grid-template: auto 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
-
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 0 5px;
     }
 
-    #hero {
-        grid-row: 1/2;
-        grid-column: 1/6;
-        max-width:800px;
-    }
-
-    #events {
+    .hero {
         grid-column: 1/3;
-        grid-row: 2/3;   
+        grid-row: 1/2;
     }
-    
-    #weather {
+
+    #spotlights {
         grid-column: 1/3;
         grid-row: 3/4;
     }
-    
-    #spotlights {
-        grid-column: 3/6;
+
+    #weather {
+        grid-column: 2/3;
+    }
+
+    #current-events {
         grid-row: 3/4;
     }
 }

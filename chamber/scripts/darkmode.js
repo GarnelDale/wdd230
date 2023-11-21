@@ -3,7 +3,8 @@ const body = document.querySelector("body");
 const cards = document.querySelectorAll(".card");
 const nav = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".navigation li a");
-const buttons = document.querySelectorAll("main button");
+const button = document.querySelectorAll(".hero button");
+const members = document.querySelectorAll("section a");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.checked) {
@@ -15,7 +16,10 @@ modeButton.addEventListener("click", () => {
 		navLinks.forEach((link)=>{
 			link.style.color = "#feeed4";
 		})
-		buttons.forEach((button)=>{
+		members.forEach((link)=>{
+			link.style.color = "#feeed4";
+		})
+		button.forEach((button)=>{
 			button.style.background = "#feeed4";
 		})
 		if (screen.width >= 640) {
@@ -30,7 +34,10 @@ modeButton.addEventListener("click", () => {
 		navLinks.forEach((link)=>{
 			link.style.color = "black";
 		})
-		buttons.forEach((button)=>{
+		members.forEach((link)=>{
+			link.style.color = "#7b2210";
+		})
+		button.forEach((button)=>{
 			button.style.background = "white";
 		})
 		if (screen.width >= 640) {

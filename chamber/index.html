@@ -1,88 +1,127 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce for WDD 230 - Web Frontend Development">
-    <meta name="author" content="Torin Bolander">
-    <meta property="og:url" content="https://garneldale.github.io/wdd230/chamber/index.html" >
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Torin Bolander - WDD 230 - Chamber Home Page" >
-    <meta property="og:description" content="Ald'ruhn Chamber of Commerce for WDD 230" >
-    <meta property="og:image" content="https://garneldale.github.io/wdd230/chamber/images/redoran-banner.webp" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chamber of Commerce for WDD 230 - Web Frontend Development"
+    />
+    <meta name="author" content="Torin Bolander" />
+    <meta
+      property="og:url"
+      content="https://garneldale.github.io/wdd230/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Torin Bolander - WDD 230 - Chamber Home Page"
+    />
+    <meta
+      property="og:description"
+      content="Ald'ruhn Chamber of Commerce for WDD 230"
+    />
+    <meta
+      property="og:image"
+      content="https://garneldale.github.io/wdd230/chamber/images/redoran-banner.webp"
+    />
     <title>Torin Bolander - WDD 230 - Chamber of Commerce Home</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="images/redoran-banner.webp" alt="Redoran House banner">
-        <h1>Ald'ruhn Chamber of Commerce</h1>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="toggle orb"></span>
-        </label>
+        <section>
+            <img src="images/redoran-banner.webp" alt="Redoran House banner" />
+            <h1>Ald'ruhn Chamber of Commerce</h1>
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="toggle orb"></span>
+            </label>
+        </section>
     </header>
     <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Map</a></li>
-        </ul>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Map</a></li>
+      </ul>
     </nav>
     <main>
-        <img id="hero" src="images/aldruhn-skar.webp" alt="Skar banner image">
+      <div class="hero">
+        <picture>
+          <source srcset="images/hero-small.webp" media="(max-width: 400px)" />
+          <source srcset="images/hero-medium.webp" media="(max-width: 900px)" />
+          <img
+            src="images/hero-large.webp"
+            alt="WDD230 Large image for responsive images"
+            width="1200px"
+            height="800px"
+          />
+        </picture>
+        <h2 id="herolabel">Hero</h2>
         <button>Join the Chamber</button>
-        <button>See all Members</button>
-        <button>City Map</button>
-        <section class="card" id="events">
-            <h2>Current Events</h2>
-            <p>Drinar Varyon removed from chamber membership following arrest for smuggling of dwemer artifacts.</p>
+      </div>
+      <!-- <img id="hero" src="images/aldruhn-skar.webp" alt="Skar banner image"> -->
+      <section class="card" id="events">
+        <h2>Current Events</h2>
+        <p>
+          Drinar Varyon removed from chamber membership following arrest for
+          smuggling of dwemer artifacts.
+        </p>
+      </section>
+      <section class="card" id="weather">
+        <h2>Weather</h2>
+        <p>
+          Ash storm for the forseeable future, prepare to cover your face if you
+          are travelling.
+        </p>
+      </section>
+      <section class="card" id="spotlights">
+        <h2>Major Members Spotlight</h2>
+        <section class="card">
+          <h3>Ald Skar Inn</h3>
+          <p>Finest inn beyond Skar</p>
+          <p>ald.skar@redoran.com</p>
+          <p># Ald-Ruhn</p>
+          <a href="https://en.uesp.net/wiki/Morrowind:Ald_Skar_Inn">Website</a>
         </section>
-        <section class="card" id="weather">
-            <h2>Weather</h2>
-            <p>Ash storm for the forseeable future, prepare to cover your face if you are travelling.</p>
+        <section class="card">
+          <h3>Selaro Smithy</h3>
+          <p>Redoran Forging at work</p>
+          <p>selaro.smithy@redoran.com</p>
+          <p># 111-2112</p>
+          <a href="https://en.uesp.net/wiki/Morrowind:Dandera_Selaro:_Smith"
+            >Website</a
+          >
         </section>
-        <section class="card" id="spotlights">
-            <h2>Major Members Spotlight</h2>
-            <section class="card">
-                <h3>Ald Skar Inn</h3>
-                <p>Finest inn beyond Skar</p>
-                <p>ald.skar@redoran.com</p>
-                <p># Ald-Ruhn</p>
-                <a href="https://en.uesp.net/wiki/Morrowind:Ald_Skar_Inn">Website</a>
-            </section>
-            <section class="card">
-                <h3>Selaro Smithy</h3>
-                <p>Redoran Forging at work</p>
-                <p>selaro.smithy@redoran.com</p>
-                <p># 111-2112</p>
-                <a href="https://en.uesp.net/wiki/Morrowind:Dandera_Selaro:_Smith">Website</a>
-            </section>
-            <section class="card">
-                <h3>Vari Enchanting</h3>
-                <p>Magic Clothing and Tools</p>
-                <p>vari.enchanting@redoran.com</p>
-                <p># 999-9665</p>
-                <a href="https://en.uesp.net/wiki/Morrowind:Llether_Vari">Website</a>
-            </section>
+        <section class="card">
+          <h3>Vari Enchanting</h3>
+          <p>Magic Clothing and Tools</p>
+          <p>vari.enchanting@redoran.com</p>
+          <p># 999-9665</p>
+          <a href="https://en.uesp.net/wiki/Morrowind:Llether_Vari">Website</a>
         </section>
+      </section>
     </main>
     <footer>
-        <p>
-            &copy; <span id="copyright"></span> <br>
-            Torin Bolander <br>
-            Project for WDD-230 Web Frontend Development 
-        </p>
-     <p id="lastModified"></p>
+      <p>
+        &copy; <span id="copyright"></span> <br />
+        Torin Bolander <br />
+        Project for WDD-230 Web Frontend Development
+      </p>
+      <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>
