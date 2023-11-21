@@ -12,7 +12,7 @@
       property="og:url"
       content="https://garneldale.github.io/wdd230/chamber/index.html"
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta
       property="og:title"
       content="Torin Bolander - WDD 230 - Chamber Home Page"
@@ -38,6 +38,7 @@
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/banner.js"defer></script>
   </head>
   <body>
     <header>
@@ -60,6 +61,10 @@
       </ul>
     </nav>
     <main>
+      <div class="banner">
+        <button>❌</button>
+        <p>Join Us for a Chamber Meet and Greet<br>Wednesday at 7:00 PM!</p>
+      </div>
       <div class="hero">
         <picture>
           <source srcset="images/hero-small.webp" media="(max-width: 400px)" />
@@ -84,7 +89,7 @@
       </section>
       <section class="card" id="weather">
         <h2>Weather</h2>
-        <p><img id="weather-icon" src="" alt=""></p>
+        <p><img id="weather-icon" src="images/question-mark.webp" alt="weather icon" width="50"></p>
         <p id="weather-desc"></p>
         <p id="weather-temp"></p>
         <p id="windspeed"></p>
