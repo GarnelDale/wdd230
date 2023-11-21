@@ -212,6 +212,15 @@ section a {
 }
 
 footer {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
+}
+
+footer p {
+  margin: 0 ;
+}
+
+#lastModified {
+  margin: 0;
+  padding: 10px;
 }
