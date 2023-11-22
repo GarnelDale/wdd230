@@ -17,7 +17,7 @@ async function apiFetch(type,url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); //testing only
+            //console.log(data); //testing only
             if (type)
                 displayResults(data);
             else
