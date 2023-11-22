@@ -241,75 +241,33 @@ footer p {
   padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* stars */
-input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
+#joinform {
+  text-align: left;
+  padding: 0.5rem;
 }
 
-.stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
+#benefits {
+  text-align: left;
+  padding: 0.5rem;
 }
 
-.stars > label {
-	color: gold;
-	width: 30px;
-	height: 30px;
-	font-size: 2rem;
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+label.myinput {
+  display: block;
+  margin-right: 0.2rem;
+  padding-top: 0.5rem;
 }
 
-.stars > label:hover {
-	color: #000;
+label.myinput input, #description {
+  width: 20rem;
+  max-width: 20rem;
+  display: block;
+  padding: 0.5rem;
+  margin-bottom: 10px;
 }
 
-.stars > label::before {
-	content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-	content: "\2605";
-}
-
-
-/* Checkbox *******************************************/
-input[type=checkbox] {
-	margin-left: 10px;
-}
-/* Note the enlargement from the standard, tiny checkbox */
-#task {
-	width: 25px;
-	height: 25px;
-}
-
-.vcentered {
-	display: flex;
-	align-items: center;
-}
-
-/* other */
-.inline {
-	display: inline;
-}
-
-.ref {
-	font-size: 13px;
-	margin-top: 1rem;
+label.myradio {
+  display: block;
+  margin-right: 0.2rem;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
 }
