@@ -1,0 +1,44 @@
+.myinput {
+	display: block;
+	font-weight: 700;
+}
+
+main {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+input[type=text], input[type=range], input[type=password], input[type=email], input[type=submit] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+#passwordMatch {
+    display: none;
+}
+
+#rating {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding: 0px;
+    width: 200px;
+}
+
+#rangevalue {
+	font-size: 2rem;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 125px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
