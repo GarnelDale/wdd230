@@ -57,7 +57,7 @@ async function getForecast(data) {
     for (let i=0; i < 3; i++){
         let forecast = document.createElement("section");
         forecast.innerHTML = `<h2>${days[i]}</h2><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`
-        weather.append(newsection)
+        weather.append(forecast)
     }
 
 }
