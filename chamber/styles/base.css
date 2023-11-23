@@ -128,6 +128,11 @@ nav {
   color: black;
 }
 
+.navigation li a:hover {
+  background: #7b2210;
+  color: #feeed4;
+}
+
 .navigation li {
   list-style-type: none;
   display: none;
@@ -270,4 +275,33 @@ label.myradio {
   margin-right: 0.2rem;
   font-size: 1.3rem;
   padding-top: 0.5rem;
+}
+
+#discover {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5px;
+}
+
+#sidebar {
+  grid-column: 1/2;
+}
+
+#locale {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+#sidebar section {
+  margin: 5px;
+}
+
+#visit {
+  background: #7b2210;
+  color: #feeed4;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 0px 0px 5px;
+  font-size: larger;
 }

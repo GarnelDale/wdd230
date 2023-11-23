@@ -8,6 +8,7 @@ const weekDay = day.getDay();
 function checkDay() {
 	if (weekDay >= 4 || weekDay == 0)
 		banner.style.display = "none";
+		hero.style.gridRow = "1/3";
 }
 
 bannerClose.addEventListener('click', () => {

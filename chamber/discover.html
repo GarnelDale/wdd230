@@ -12,7 +12,7 @@
       property="og:url"
       content="https://garneldale.github.io/wdd230/chamber/discover.html"
     />
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <meta
       property="og:title"
       content="Torin Bolander - WDD 230 - Discover Ald'ruhn"
@@ -37,47 +37,86 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/datevisit.js" defer></script>
   </head>
   <body>
     <header>
-        <section>
-            <img src="images/redoran-banner.webp" alt="Redoran House banner" />
-            <h1>Ald'ruhn Chamber of Commerce</h1>
-            <label class="switch">
-                <input type="checkbox" />
-                <span class="toggle orb"></span>
-            </label>
-        </section>
+      <section>
+        <a href="index.html"><img src="images/redoran-banner.webp" alt="Redoran House banner" /></a>
+        <h1>Ald'ruhn Chamber of Commerce</h1>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="toggle orb"></span>
+        </label>
+      </section>
     </header>
     <nav>
       <button id="menu"></button>
       <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Map</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
       </ul>
     </nav>
     <main>
-      <section id="sidebar">
+      <div id="discover">
+        <section class="card" id="sidebar">
+          <p class="card" id="visit"></p>
+          <h2>Information about Ald'ruhn</h2>
+          <section class="card">
+            <h3>Council Seat of House Redoran</h3>
+            <img src="images/redoran-council-hall.webp" alt="Redoran council hall entryway" loading="lazy">
+          </section>
+          <section class="card">
+            <h3>Map of Ald'ruhn</h3>
+            <a href="https://en.uesp.net/wiki/Morrowind:Ald%27ruhn"><img src="images/aldruhn-map.webp" alt="Map of Aldruhn" loading="lazy"></a>
+          </section>
+        </section>
+        <section id="locale">
+          <h2>Important Locations of Ald'ruhn</h2>
         <section class="card">
-          <p>Council Seat of House Redoran</p>
+          <h3>Fighter's Guild</h3>
+          <img src="images/aldruhn-fighters-guild.webp" alt="Ald'ruhn Fighter's Guild" loading="lazy">
+          <p>Filler text</p>
+        </section>
+        <section class="card">
+          <h3>Mage's Guild</h3>
+          <img src="images/aldruhn-mages-guild.webp" alt="Ald'ruhn Mages's Guild" loading="lazy">
+          <p>Filler text</p>
+        </section>
+        <section class="card">
+          <h3>Silt Strider</h3>
+          <img src="images/aldruhn-silt-strider.webp" alt="Ald'ruhn silt strider" loading="lazy">
+          <p>Filler text</p>
+        </section>
+        <section class="card">
+          <h3>Tribunal Temple</h3>
+          <img src="images/aldruhn-temple.webp" alt="Ald'ruhn temple to the Tribunal" loading="lazy">
+          <p>Filler text</p>
+        </section>
+        <section class="card">
+          <h3>Fort Buckmoth</h3>
+          <img src="images/fort-buckmoth.webp" alt="Imperial Legion Fort Buckmoth" loading="lazy">
+          <p>Filler text</p>
+        </section>
+        <section class="card">
+          <h3>Redoran Council Hall</h3>
+          <img src="images/redoran-council-entry.webp" alt="Redoran council hall Entry" loading="lazy">
+          <p>Filler text</p>
         </section>
       </section>
-      <section id="discover">
-        <picture>
-          <source>
-          <img>
-        </picture>
-      </section>
+      </div>
     </main>
     <footer>
       <p>
         &copy; <span id="copyright"></span> <br />
         Torin Bolander <br />
-        Project for WDD-230 Web Frontend Development <br /> <br />
-        All Rights Reserved. Bethesda, Bethesda Softworks and Bethesda Game Studios and their respective logos are registered trademarks of ZeniMax Media Inc. in the U.S. and/or other countries.
+        Project for WDD-230 Web Frontend Development <br />
+        <br />
+        All Rights Reserved. Bethesda, Bethesda Softworks and Bethesda Game
+        Studios and their respective logos are registered trademarks of ZeniMax
+        Media Inc. in the U.S. and/or other countries.
       </p>
       <p id="lastModified"></p>
     </footer>

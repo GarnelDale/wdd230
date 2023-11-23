@@ -54,4 +54,8 @@
     #thanks {
         grid-column: 1/3;
     }
+
+    #locale img:hover {
+        filter: drop-shadow(#7b2210 0.5rem 0.5rem );
+    }
 }
