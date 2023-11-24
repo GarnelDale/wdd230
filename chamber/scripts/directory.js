@@ -20,11 +20,11 @@ function displayMembers(data) {
     data.forEach((member)=>{
         let section = document.createElement("section");
         section.classList.add("card");
-        let sectionHTML =`<h3>${member.name}</h3>
+        let sectionHTML =`<h2>${member.name}</h2>
         <p>Address: ${member.address}</p>
         <p>Phone #: ${member.phone}</p>
         <a href="${member.website}">Website</a>
-        <img src="${member.image}" alt="Picture of ${member.name}">
+        <img src="${member.image}" alt="Picture of ${member.name}" loading="lazy">
         <p>Membership: ${member.membership}</p>`
         section.innerHTML = sectionHTML;
         main.appendChild(section);
