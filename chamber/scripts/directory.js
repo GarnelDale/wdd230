@@ -24,7 +24,7 @@ function displayMembers(data) {
         <p>Address: ${member.address}</p>
         <p>Phone #: ${member.phone}</p>
         <a href="${member.website}">Website</a>
-        <img src="${member.image}" alt="Picture of ${member.name}" loading="lazy">
+        <img src="${member.image}" alt="Picture of ${member.name}" loading="lazy" width="200" height="150">
         <p>Membership: ${member.membership}</p>`
         section.innerHTML = sectionHTML;
         main.appendChild(section);

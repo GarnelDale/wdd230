@@ -228,7 +228,7 @@ main {
   margin: 10px 0 0;
 }
 
-.hero button {
+.hero form button {
   position: absolute;
   width: 30%;
   height: 50px;

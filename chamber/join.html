@@ -71,8 +71,8 @@
           <input type="text" id="lname" name="lname" required />
         </label>
         <label class="myinput">
-          Title
-          <input type="text" id="title" name="title" required />
+          Title*
+          <input type="text" id="title" name="title" required pattern="[a-zA-Z\s-]{7,}"/>
         </label>
         <label class="myinput">
           Email*
@@ -90,7 +90,7 @@
         </label>
         <label class="myinput">
           Business Name*
-          <input type="text" id="business" name="business" required />
+          <input type="text" id="business" name="business" required/>
         </label>
         <h3>Membership Level</h3>
         <label class="myradio">
