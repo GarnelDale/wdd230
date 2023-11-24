@@ -1,47 +1,33 @@
 const modeButton = document.querySelector("input");
-const body = document.querySelector("body");
 const cards = document.querySelectorAll(".card");
 const nav = document.querySelector("nav");
-const navLinks = document.querySelectorAll(".navigation li a");
-const button = document.querySelectorAll(".hero button");
-const members = document.querySelectorAll("section a");
+const button = document.querySelectorAll("button");
+const members = document.querySelectorAll("section a");            
 
-modeButton.addEventListener("click", () => {
+modeButton.addEventListener("click", ()=> {
 	if (modeButton.checked) {
-		body.style.background = "#000";
-		body.style.color = "#feeed4";
-		cards.forEach((card)=>{
-			card.style.border = "1px solid white";
+		document.documentElement.style.setProperty('--main-background-color', 'black');        
+		document.documentElement.style.setProperty('--main-text-color', '#feeed4');   
+		document.documentElement.style.setProperty('--body-link-color', '#feeed4');  
+		cards.forEach((card)=> {
+			card.style.border = "1px solid var(--main-text-color)";
 		})
-		navLinks.forEach((link)=>{
-			link.style.color = "#feeed4";
+		button.forEach((buttons)=> {
+			buttons.style.background = "#feeed4";
 		})
-		members.forEach((link)=>{
-			link.style.color = "#feeed4";
-		})
-		button.forEach((button)=>{
-			button.style.background = "#feeed4";
-		})
-		if (screen.width >= 640) {
-			nav.style.border = "1px solid white";
-		}
+		if (screen.width >= 640) 
+			nav.style.border = "1px solid var(--main-text-color)";
 	} else {
-		body.style.background = "#feeed4";
-		body.style.color = "black";
-		cards.forEach((card)=>{
-			card.style.border = "1px solid black";
+		document.documentElement.style.setProperty('--main-background-color', '#feeed4');        
+		document.documentElement.style.setProperty('--main-text-color', 'black');   
+		document.documentElement.style.setProperty('--body-link-color', '#7b2210');        
+		cards.forEach((card)=> {
+			card.style.border = "1px solid var(--main-text-color)";
 		})
-		navLinks.forEach((link)=>{
-			link.style.color = "black";
+		button.forEach((buttons)=> {
+			buttons.style.background = "white";
 		})
-		members.forEach((link)=>{
-			link.style.color = "#7b2210";
-		})
-		button.forEach((button)=>{
-			button.style.background = "white";
-		})
-		if (screen.width >= 640) {
-			nav.style.border = "1px solid black";
-		}
+		if (screen.width >= 640) 
+			nav.style.border = "1px solid var(--main-text-color)";
 	}
 });

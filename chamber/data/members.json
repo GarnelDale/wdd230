@@ -1,0 +1,58 @@
+[
+{
+    "name" : "Selaro Smithy",
+    "address" : "4 Ald-ruhn",
+    "phone" : "111-2112",
+    "website" : "https://en.uesp.net/wiki/Morrowind:Dandera_Selaro:_Smith",
+    "image" : "images/selaro-smithy.webp",
+    "membership" : "Silver"
+},
+{
+    "name" : "Ald Skar Inn",
+    "address" : "8 Ald-ruhn",
+    "phone" : "Ald-Ruhn",
+    "website" : "https://en.uesp.net/wiki/Morrowind:Ald_Skar_Inn",
+    "image" : "images/ald-skar-inn.webp",
+    "membership" : "Gold"
+},
+{
+    "name" : "Callonus Bookseller",
+    "address" : "3 Ald-ruhn",
+    "phone" : "512-1267",
+    "website" : "https://en.uesp.net/wiki/Morrowind:Codus_Callonus",
+    "image" : "images/callonus-bookseller.webp",
+    "membership" : "Bronze"
+},
+{
+    "name" : "Sintieve Alchemy",
+    "address" : "9 Under-Skar",
+    "phone" : "333-6879",
+    "website" : "https://en.uesp.net/wiki/Morrowind:Cienne_Sintieve:_Alchemist",
+    "image" : "images/sintieve-alchemist.webp",
+    "membership" : "Silver"
+},
+{
+    "name" : "Teneran Clothier",
+    "address" : "10 Under-Skar",
+    "phone" : "102-0128",
+    "website" : "https://en.uesp.net/wiki/Morrowind:Bivale_Teneran:_Clothier",
+    "image" : "images/teneran-clothier.webp",
+    "membership" : "Gold"
+},
+{
+    "name" : "Vari Enchanting",
+    "address" : "11 Under-Skar",
+    "phone" : "999-9665",
+    "website" : "https://en.uesp.net/wiki/Morrowind:Llether_Vari:_Enchanter",
+    "image" : "images/vari-enchanter.webp",
+    "membership" : "Gold"
+},
+{
+    "name" : "The Rat in the Pot",
+    "address" : "23 Ald-ruhn",
+    "phone" : "666-5566",
+    "website" : "https://en.uesp.net/wiki/Morrowind:The_Rat_In_The_Pot",
+    "image" : "images/rat-in-the-pot.webp",
+    "membership" : "Bronze"
+}
+]

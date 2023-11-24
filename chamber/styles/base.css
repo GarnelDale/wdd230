@@ -5,10 +5,18 @@
   src: url(magic-cards-normal.ttf);
 }
 
+:root {
+  --accent-background-color: #7b2210;
+  --accent-text-color: #feeed4;
+  --main-background-color: #feeed4;
+  --main-text-color: black;
+  --body-link-color: #7b2210;
+}
+
 header,
 footer {
-  background-color: #7b2210;
-  color: #feeed4;
+  background-color: var(--accent-background-color);
+  color: var(--accent-text-color);
   grid-column: 1/6;
 }
 
@@ -26,7 +34,8 @@ h6 {
 
 body {
   font-family: "Nanum Gothic", Century, sans-serif;
-  background-color: #feeed4;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
 }
 
 header section {
@@ -125,12 +134,12 @@ nav {
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: var(--main-text-color);
 }
 
 .navigation li a:hover {
-  background: #7b2210;
-  color: #feeed4;
+  background: var(--accent-background-color);
+  color: var(--accent-text-color);
 }
 
 .navigation li {
@@ -163,8 +172,8 @@ nav {
 .banner {
   position: relative;
   text-align: center;
-  background-color: #7b2210;
-  color: #feeed4;
+  background-color: var(--accent-background-color);
+  color: var(--accent-text-color);
   border: 1px solid black;
   padding: 1rem;
 }
@@ -174,6 +183,10 @@ nav {
   top: 5px;
   left: 5px;
   background: #feeed4;
+}
+
+button {
+  background: white;
 }
 
 .hero {
@@ -192,8 +205,8 @@ nav {
   top: 0;
   left: 0;
   padding: 1.5rem;
-  background: #7b2210;
-  color: #feeed4;
+  background: var(--accent-background-color);
+  color: var(--accent-text-color);
   margin-block-start: 0em;
 }
 
@@ -210,7 +223,7 @@ main {
 }
 
 .card {
-  border: 1px solid black;
+  border: 1px solid var(--main-text-color);
   text-align: center;
   margin: 10px 0 0;
 }
@@ -227,9 +240,10 @@ main {
 }
 
 section a {
-  color: #7b2210;
+  color: var(--body-link-color);
   font-size: 1.25em;
   text-decoration: none;
+  display: block;
 }
 
 footer {
@@ -298,10 +312,37 @@ label.myradio {
 }
 
 #visit {
-  background: #7b2210;
-  color: #feeed4;
+  background: var(--accent-background-color);
+  color: var(--accent-text-color);
   width: 100%;
   padding: 20px 0px;
   margin: 0px 0px 5px;
   font-size: larger;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.list section h3, .list section a {
+  margin: auto;
+}
+
+.list section img {
+  display: none;
+}
+
+#grid-selector, #list-selector {
+  display: inline-block;
+  text-align: center;
+}
+
+#grid, #list {
+  width: 100px;
 }
