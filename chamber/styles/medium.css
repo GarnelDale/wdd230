@@ -57,7 +57,7 @@
     }
 
     #locale img:hover {
-        filter: drop-shadow(var(--accent-background-color) 0.5rem 0.5rem );
+        filter: drop-shadow(#7b2210 0.5rem 0.5rem );
     }
 
     #directory {
