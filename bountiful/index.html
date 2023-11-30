@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home page for Bountiful Foods" />
+    <meta name="author" content="Torin Bolander" />
+    <meta
+      property="og:url"
+      content="https://garneldale.github.io/wdd230/bountiful/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bountiful Foods - Home" />
+    <meta property="og:description" content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California." />
+    <meta
+      property="og:image"
+      content="https://garneldale.github.io/wdd230/bountiful/images/"
+    />
+    <title>Bountiful Foods - Home</title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      The Home page is a contemporary, exciting landing page providing images of
+      fruit and produce including specialty fruit drinks that are ready to serve
+      and made fresh. The page must contain the following.
+      <h1>Bountiful Foods</h1>
+    </header>
+    <nav>
+      <button id="burger"></button>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="order.html">Order a Drink</a></li>
+      </ul>
+    </nav>
+    <main>
+      <picture>
+        <img
+          src="images/beachbanner.webp"
+          alt="Beach near Carlsbad, California or maybe of fruits"
+        />
+        <button id="smoothie">
+          A call to action to make your own fruit drink mix. This link can link
+          to the 📄Order Drink page.
+        </button>
+      </picture>
+      <section class="card" id="about">
+        Summary information about any coastal area or areas in the southern
+        California coast of your choosing.
+      </section>
+      <section class="card" id="weather">
+        Weather card(s) which summarize the current weather conditions for
+        Carlsbad. Use the Current Weather API at OpenWeather and include Current
+        temperature Condition description Current conditions icon Current
+        humidity
+      </section>
+      <section class="card" id="forecast">
+        Display a forecast for Carlsbad that displays the weather condition
+        description and related icon at 9:00 AM for the next three days (not
+        including today). Use the 5-Day/3-Hour forecast from OpenWeatherLinks to
+        an external site.
+      </section>
+      <section class="card" id="drinkTotals">
+        Include an information card about the total number of specialty drinks
+        that the current user has submitted from the Order Drink page form. This
+        information should just be stored locally, with the user's agent
+        (browser).
+      </section>
+    </main>
+    <footer>
+      <a href="sources.html">Site Resources</a>
+      <a href="https://www.youtube.com/"
+        ><img src="images/youtube.webp" alt="YouTube channel link"
+      /></a>
+      <a href="https://www.facebook.com/"
+        ><img src="images/facebook.webp" alt="Facebook group page link"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="images/instagram.webp" alt="Instagram feed link"
+      /></a>
+      <p>Last Modified: <span id="lastModified"></span></p>
+      <p>
+        Email Us: bountiful.foods@fake.com <br />
+        Call Us: 123-4567 <br />
+        Visit Us: 890 N 39th St. Carlsbad, California
+      </p>
+    </footer>
+  </body>
+</html>
