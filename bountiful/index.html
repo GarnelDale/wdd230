@@ -28,6 +28,7 @@
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/orderCount.js" defer></script>
   </head>
   <body>
     <header>
@@ -60,26 +61,19 @@
     </div>
       <section class="card" id="about">
         <img src="images/legoland-small.webp" alt="Image of Legoland California Entrance">
-        Summary information about any coastal area or areas in the southern
-        California coast of your choosing.
+        <p>Just north of Legoland California and surrounded by parks and beachs on all sides, there is no shortage of things to do around Carlsbad.</p>
       </section>
       <section class="card" id="weather">
-        Weather card(s) which summarize the current weather conditions for
-        Carlsbad. Use the Current Weather API at OpenWeather and include Current
-        temperature Condition description Current conditions icon Current
-        humidity
+        <h2>Weather</h2>
+        <p><img id="weather-icon" src="images/question-mark.webp" alt="weather icon" width="50"></p>
+        <p id="weather-desc"></p>
+        <p id="weather-temp"></p>
+        <p id="humidity"></p>
       </section>
       <section class="card" id="forecast">
-        Display a forecast for Carlsbad that displays the weather condition
-        description and related icon at 9:00 AM for the next three days (not
-        including today). Use the 5-Day/3-Hour forecast from OpenWeatherLinks to
-        an external site.
       </section>
       <section class="card" id="drinkTotals">
-        Include an information card about the total number of specialty drinks
-        that the current user has submitted from the Order Drink page form. This
-        information should just be stored locally, with the user's agent
-        (browser).
+        <p>You have ordered <span id="drinks"></span> drinks with us. <span id="thanks"></span></p>
       </section>
     </main>
     <footer>

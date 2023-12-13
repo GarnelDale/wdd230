@@ -111,8 +111,9 @@ main {
 .card {
     margin: 15px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
-
 
 footer {
     display: flex;
