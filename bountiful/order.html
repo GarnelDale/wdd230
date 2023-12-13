@@ -25,8 +25,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/populateFruit.js" defer></script>
     <script src="scripts/orderAdd.js" defer></script>
   </head>
   <body>
@@ -45,37 +46,61 @@
       </ul>
     </nav>
     <main>
-        The Order Drink page contains a form that allows the user to order a specialty drink.
-        The form requires the following items: 
-        first name, email and phone number
-        three (3) select inputs that are populated with all the available fruit to put into a drink.
-        Available fruit options must only come from this web service: https://www.fruityvice.com/Links to an external site. for full credit consideration. 
-        If desired you can download the JSON file from https://www.fruityvice.com/Links to an external site. and use that locally in your site.
-        Also, include an area that allows them to add special instructions if needed.
-        Mention in the form somewhere that payment is received when the drink is picked up.
-        The form submission takes you to the Order Confirmation page to show you what you ordered.
+      <h2>Specialty Beverages</h2>
+        <form method="GET" action="confirm.html">
+          <label class="myinput">
+              First Name*
+            <input type="text" id="fname" name="fname" required/>
+          </label>
+          <label class="myinput">
+              Email*
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"/>
+          </label>
+          <label class="myinput">
+            Phone Number*
+            <input type="tel" id="phone" name="phone" required>
+          </label>
+          <label class="myinput">
+            Fruit 1*
+            <select name="fruit1" id="fruit1" class="fruitSelect" required></select>
+          </label>
+          <label class="myinput">
+            Fruit 2*
+            <select name="fruit2" id="fruit2" class="fruitSelect" required></select>
+          </label>
+          <label class="myinput">
+            Fruit 3*
+            <select name="fruit3" id="fruit3" class="fruitSelect" required></select>
+          </label>
+          <label class="myinput">
+            Special Instructions
+            <textarea name="special" id="instructions"></textarea>
+          </label>
+          <h3>Payment for order is taken when the drink is picked up</h3>
+          <label class="myinput">
+            <button type="submit" id="formButton">Complete Order</button>
+          </label>
+        </form>
     </main>
     <footer>
       <div>
-      <a href="https://www.youtube.com/"
-        ><img src="images/youtube.webp" alt="YouTube channel link"
-      /></a>
-      <a href="https://www.facebook.com/"
-        ><img src="images/facebook.webp" alt="Facebook group page link"
-      /></a>
-      <a href="https://www.instagram.com/"
-        ><img src="images/instagram.webp" alt="Instagram feed link"
-      /></a>
-    </div>
-    <div>
-      <p>Last Modified: <span id="lastModified"></span></p>
-      <p>
-        Email Us: bountiful.foods@fake.com <br />
-        Call Us: 123-4567 <br />
-        Visit Us: 890 N 39th St. Carlsbad, California
-      </p>
-      <a href="sources.html">Site Resources</a>
-    </div>
+        <a href="https://www.youtube.com/"
+          ><img src="images/youtube.webp" alt="YouTube channel link"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="images/facebook.webp" alt="Facebook group page link"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/instagram.webp" alt="Instagram feed link"
+        /></a>
+        <p>
+          Email Us: bountiful.foods@fake.com <br />
+          Call Us: 123-4567 <br />
+          Visit Us: 890 N 39th St. Carlsbad, California
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="sources.html">Site Resources</a>
+      </div>
     </footer>
   </body>
 </html>

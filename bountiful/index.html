@@ -11,7 +11,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Bountiful Foods - Home" />
-    <meta property="og:description" content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California." />
+    <meta
+      property="og:description"
+      content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California."
+    />
     <meta
       property="og:image"
       content="https://garneldale.github.io/wdd230/bountiful/images/fruit-smoothie.webp"
@@ -22,9 +25,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/weather.js" defer></script>
@@ -33,9 +36,13 @@
   <body>
     <header>
       <section>
-      <a href="index.html"><img src="images/fruit-smoothie.webp" alt="image of a fruit smoothie"></a>
-      <h1>Bountiful Foods</h1>
-    </section>
+        <a href="index.html"
+          ><img
+            src="images/fruit-smoothie.webp"
+            alt="image of a fruit smoothie"
+        /></a>
+        <h1>Bountiful Foods</h1>
+      </section>
     </header>
     <nav>
       <button id="burger"></button>
@@ -47,37 +54,53 @@
     </nav>
     <main>
       <div id="callToAction">
-      <picture>
-        <img
-          src="images/fruit-banner.webp"
-          alt="Beach near Carlsbad, California or maybe of fruits"
-        />
-      </picture>
-      <form action="order.html">
-        <button type="submit" id="smoothie">
-          Order a custom drink today!
-        </button>
-     </form>
-    </div>
+        <picture>
+          <img
+            src="images/fruit-banner.webp"
+            alt="Beach near Carlsbad, California or maybe of fruits"
+          />
+        </picture>
+        <form action="order.html">
+          <button type="submit" id="smoothie">
+            Order a custom drink today!
+          </button>
+        </form>
+      </div>
       <section class="card" id="about">
-        <img src="images/legoland-small.webp" alt="Image of Legoland California Entrance">
-        <p>Just north of Legoland California and surrounded by parks and beachs on all sides, there is no shortage of things to do around Carlsbad.</p>
+        <img
+          src="images/legoland-small.webp"
+          alt="Image of Legoland California Entrance"
+        />
+        <p>
+          Just north of Legoland California and surrounded by parks and beachs
+          on all sides, there is no shortage of things to do around Carlsbad.
+        </p>
       </section>
       <section class="card" id="weather">
-        <h2>Weather</h2>
-        <p><img id="weather-icon" src="images/question-mark.webp" alt="weather icon" width="50"></p>
-        <p id="weather-desc"></p>
-        <p id="weather-temp"></p>
-        <p id="humidity"></p>
-      </section>
-      <section class="card" id="forecast">
+        <section>
+          <h2>Weather</h2>
+          <p>
+            <img
+              id="weather-icon"
+              src="images/question-mark.webp"
+              alt="weather icon"
+              width="50"
+            />
+          </p>
+          <p id="weather-desc"></p>
+          <p id="weather-temp"></p>
+          <p id="humidity"></p>
+        </section>
       </section>
       <section class="card" id="drinkTotals">
-        <p>You have ordered <span id="drinks"></span> drinks with us. <span id="thanks"></span></p>
+        <p>
+          You have ordered <span id="drinks"></span> drinks with us.
+          <span id="thanks"></span>
+        </p>
       </section>
     </main>
     <footer>
-    <div>
+      <div>
         <a href="https://www.youtube.com/"
           ><img src="images/youtube.webp" alt="YouTube channel link"
         /></a>
@@ -87,14 +110,14 @@
         <a href="https://www.instagram.com/"
           ><img src="images/instagram.webp" alt="Instagram feed link"
         /></a>
-      <p>
-        Email Us: bountiful.foods@fake.com <br />
-        Call Us: 123-4567 <br />
-        Visit Us: 890 N 39th St. Carlsbad, California
-      </p>
-      <p>Last Modified: <span id="lastModified"></span></p>
-      <a href="sources.html">Site Resources</a>
-    </div>
+        <p>
+          Email Us: bountiful.foods@fake.com <br />
+          Call Us: 123-4567 <br />
+          Visit Us: 890 N 39th St. Carlsbad, California
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="sources.html">Site Resources</a>
+      </div>
     </footer>
   </body>
 </html>

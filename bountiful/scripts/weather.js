@@ -43,7 +43,7 @@ async function getForecast(data) {
     ) 
 
     // Add the forecast information to the HTML document
-    let weather = document.querySelector("#forecast")
+    let weather = document.querySelector("#weather")
     for (let i=0; i < 3; i++){
         let forecast = document.createElement("section");
         forecast.innerHTML = `<h2>${days[i]}</h2><p>Forecast at 9AM: ${highTemps[i][3].weather[0].description}</p><img src=https://openweathermap.org/img/w/${highTemps[i][3].weather[0].icon}.png>`
