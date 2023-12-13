@@ -26,7 +26,7 @@ header section img {
 h1 {
   text-align: center;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 nav {
@@ -84,7 +84,8 @@ nav {
 
 main {
     max-width: var(--main-width);
-    margin: 15px;
+    margin: 15px 25px;
+    align-items: center;
 }
 
 button {
@@ -113,15 +114,54 @@ button {
 }
 
 .card {
-    margin: 15px;
-    padding: 10px;
+    margin: 15px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+#weather, #drinkTotals {
+  align-items: center;
+  text-align: center;
 }
 
 .myinput {
     display: block;
     margin: 15px;
+}
+
+textarea {
+  padding: 10px 0px;
+}
+
+#output {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#date {
+  margin-top: 0px;
+}
+
+.condense p {
+    margin: 2px;
+}
+
+picture img {
+  width: var(--main-width);
+  height: auto;
+}
+
+iframe {
+  height: 450px;
+  width: var(--main-width);
+  display: block;
+  border: 0;
+}
+
+#source h2 {
+  margin-bottom: 0px;
 }
 
 footer {

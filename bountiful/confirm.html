@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Order confirmation page for Bountiful Foods" />
+    <meta
+      name="description"
+      content="Order confirmation page for Bountiful Foods"
+    />
     <meta name="author" content="Torin Bolander" />
     <meta
       property="og:url"
@@ -11,7 +14,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Bountiful Foods - Order Confirmation" />
-    <meta property="og:description" content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California." />
+    <meta
+      property="og:description"
+      content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California."
+    />
     <meta
       property="og:image"
       content="https://garneldale.github.io/wdd230/bountiful/images/fruit-smoothie.webp"
@@ -22,19 +28,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/confirmOrder.js" defer></script>
   </head>
   <body>
     <header>
-        <section>
-        <a href="index.html"><img src="images/fruit-smoothie.webp" alt="image of a fruit smoothie"></a>
+      <section>
+        <a href="index.html"
+          ><img
+            src="images/fruit-smoothie.webp"
+            alt="image of a fruit smoothie"
+            loading="lazy"
+        /></a>
         <h1>Bountiful Foods</h1>
       </section>
-      </header>
+    </header>
     <nav>
       <button id="burger"></button>
       <ul class="navigation">
@@ -44,40 +56,54 @@
       </ul>
     </nav>
     <main>
-        Order Confirmation page with an output area on this same page showing:
-        the input values of the order (7 inputs = first name, email, phone, three selected fruits, and special instructions),
-        Use the URL API to accomplish this as explained in W12 - Working with the URL API and not local storage or some other method.
-        the order date, and 
-        the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit choices selected on the form. Again, use the https://www.fruityvice.com/Links to an external site. web service or JSON file to extract and sum up that information.
-        Create an excellent user experience for the order confirmation page.
-        Thank the user for their order
-        Give the user an estimate for when they can pick up their drink.
-        Give the user a way to contact you if there is a problem.
-        Include a call to action for the user to leave a review on social media.
-        Consider examples of order confirmation pages by viewing the examples here:
-        https://www.convertcart.com/blog/order-confirmation-pageLinks to an external site.
+      <section class="card">
+        <h2>Thank you for ordering from Bountiful Foods!</h2>
+        <p>Your drink will be ready for pick-up in 20 minutes.</p>
+        <p>
+          If there is an issue with your order, please call us at (760)
+          123-4567.
+        </p>
+        <p>Please share your experience with us on social media!</p>
+      </section>
+      <section class="card" id="output">
+        <h3 id="date">Order Date:</h3>
+        <p id="first"></p>
+        <p id="mail"></p>
+        <p id="tele"></p>
+        <div class="condense">
+          <p id="1fruit"></p>
+          <p id="2fruit"></p>
+          <p id="3fruit"></p>
+        </div>
+        <p id="special"></p>
+        <div class="condense">
+          <p id="carbs"></p>
+          <p id="protein"></p>
+          <p id="fat"></p>
+          <p id="sugar"></p>
+          <p id="calories"></p>
+        </div>
+      </section>
     </main>
     <footer>
       <div>
-      <a href="https://www.youtube.com/"
-        ><img src="images/youtube.webp" alt="YouTube channel link"
-      /></a>
-      <a href="https://www.facebook.com/"
-        ><img src="images/facebook.webp" alt="Facebook group page link"
-      /></a>
-      <a href="https://www.instagram.com/"
-        ><img src="images/instagram.webp" alt="Instagram feed link"
-      /></a>
-    </div>
-    <div>
-      <p>Last Modified: <span id="lastModified"></span></p>
-      <p>
-        Email Us: bountiful.foods@fake.com <br />
-        Call Us: 123-4567 <br />
-        Visit Us: 890 N 39th St. Carlsbad, California
-      </p>
-      <a href="sources.html">Site Resources</a>
-    </div>
+        <a href="https://www.youtube.com/"
+          ><img src="images/youtube.webp" alt="YouTube channel link"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="images/facebook.webp" alt="Facebook group page link"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/instagram.webp" alt="Instagram feed link"
+        /></a>
+        <p>
+          Email Us: bountiful.foods@fake.com <br />
+          Call Us: (760) 123-4567 <br />
+          Visit Us: 890 N 39th St. Carlsbad, California
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="sources.html">Site Resources</a>
+      </div>
     </footer>
   </body>
 </html>

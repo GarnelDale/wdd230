@@ -30,14 +30,18 @@
     <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
       <section>
-      <a href="index.html"><img src="images/fruit-smoothie.webp" alt="image of a fruit smoothie"></a>
-      <h1>Bountiful Foods</h1>
-    </section>
+        <a href="index.html"
+          ><img
+            src="images/fruit-smoothie.webp"
+            alt="image of a fruit smoothie"
+            loading="lazy"
+        /></a>
+        <h1>Bountiful Foods</h1>
+      </section>
     </header>
     <nav>
       <button id="burger"></button>
@@ -48,9 +52,72 @@
       </ul>
     </nav>
     <main>
-      The About Us page provides historical information about the company and
-      area and a Google Map of Carlsbad California. Include at least 2 images on
-      this page that scale down at medium and small resolutions.
+      <section class="card" id="aboutUs">
+        <h2>About Us</h2>
+        <p>
+          Established in 1989 by John and Jane Smith, we have proudly served the
+          area of Carlsbad custom fruit beverages for 2 generations. With only
+          the freshest of ingredients sourced directly in partnership with local
+          farmers, we guarantee a great tasting, refreshing drink with every
+          order.
+        </p>
+      </section>
+      <section class="card" id="carlsbad">
+        <h2>Carlsbad</h2>
+        <picture>
+          <source
+            srcset="images/carlsbad-sky-small.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="images/carlsbad-sky-medium.webp"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="images/carlsbad-sky.webp"
+            alt="Aerial shot of Carlsbad, California"
+            width="1430"
+            height="1072"
+            loading="lazy"
+          />
+        </picture>
+        <p>
+          Originally the homelands of the Luiseño Indians, the "Village by the
+          Sea" was settled by Spanish missions starting in the late 18th
+          century. Shortly after 1882, it was discovered that the fresh well
+          water in the area was similar in composition to the famous spas of
+          Europe, earning Carlsbad its name as a nod to Karlsbad in Bohemia.
+          Carlsbad is known for its beaches, farms, and many other local
+          attractions, including the Flower Fields at Carlsbad Ranch.
+        </p>
+      </section>
+      <section class="card" id="flower">
+        <h2>The Flower Fields</h2>
+        <picture>
+          <source
+            srcset="images/flower-field-sky-small.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="images/flower-field-sky-medium.webp"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="images/flower-field-sky.webp"
+            alt="Aerial shot of Carlsbad, California"
+            width="1200"
+            height="675"
+            loading="lazy"
+          />
+        </picture>
+        <p>
+          The flower fields were established over 60 years ago and are an annual
+          tourist site showcasing 55 acres of patterned flowers. These flowers
+          announce the arrival of spring as they bloom from early March to early
+          May each year. These fields have become a defining part of the local
+          heritage of Carlsbad.
+        </p>
+      </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106912.26207661197!2d-117.37501021792797!3d33.13514941197939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702428037950!5m2!1sen!2sus"
         width="600"
@@ -72,14 +139,12 @@
         <a href="https://www.instagram.com/"
           ><img src="images/instagram.webp" alt="Instagram feed link"
         /></a>
-      </div>
-      <div>
-        <p>Last Modified: <span id="lastModified"></span></p>
         <p>
           Email Us: bountiful.foods@fake.com <br />
-          Call Us: 123-4567 <br />
+          Call Us: (760) 123-4567 <br />
           Visit Us: 890 N 39th St. Carlsbad, California
         </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
         <a href="sources.html">Site Resources</a>
       </div>
     </footer>

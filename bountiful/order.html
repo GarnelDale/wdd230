@@ -11,7 +11,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Bountiful Foods - Order Drink" />
-    <meta property="og:description" content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California." />
+    <meta
+      property="og:description"
+      content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California."
+    />
     <meta
       property="og:image"
       content="https://garneldale.github.io/wdd230/bountiful/images/fruit-smoothie.webp"
@@ -22,9 +25,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/populateFruit.js" defer></script>
@@ -33,9 +36,14 @@
   <body>
     <header>
       <section>
-      <a href="index.html"><img src="images/fruit-smoothie.webp" alt="image of a fruit smoothie"></a>
-      <h1>Bountiful Foods</h1>
-    </section>
+        <a href="index.html"
+          ><img
+            src="images/fruit-smoothie.webp"
+            alt="image of a fruit smoothie"
+            loading="lazy"
+        /></a>
+        <h1>Bountiful Foods</h1>
+      </section>
     </header>
     <nav>
       <button id="burger"></button>
@@ -46,41 +54,63 @@
       </ul>
     </nav>
     <main>
-      <h2>Specialty Beverages</h2>
-        <form method="GET" action="confirm.html">
-          <label class="myinput">
-              First Name*
-            <input type="text" id="fname" name="fname" required/>
-          </label>
-          <label class="myinput">
-              Email*
-            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"/>
-          </label>
-          <label class="myinput">
-            Phone Number*
-            <input type="tel" id="phone" name="phone" required>
-          </label>
-          <label class="myinput">
-            Fruit 1*
-            <select name="fruit1" id="fruit1" class="fruitSelect" required></select>
-          </label>
-          <label class="myinput">
-            Fruit 2*
-            <select name="fruit2" id="fruit2" class="fruitSelect" required></select>
-          </label>
-          <label class="myinput">
-            Fruit 3*
-            <select name="fruit3" id="fruit3" class="fruitSelect" required></select>
-          </label>
-          <label class="myinput">
-            Special Instructions
-            <textarea name="special" id="instructions"></textarea>
-          </label>
-          <h3>Payment for order is taken when the drink is picked up</h3>
-          <label class="myinput">
-            <button type="submit" id="formButton">Complete Order</button>
-          </label>
-        </form>
+      <h2 id="order">Specialty Beverages</h2>
+      <form method="GET" action="confirm.html" id="drinkOrder">
+        <label class="myinput">
+          First Name*
+          <input type="text" id="fname" name="fname" required />
+        </label>
+        <label class="myinput">
+          Email*
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+            title="Please enter a valid email address"
+          />
+        </label>
+        <label class="myinput">
+          Phone Number*
+          <input type="tel" id="phone" name="phone" required />
+        </label>
+        <label class="myinput">
+          Fruit 1*
+          <select
+            name="fruit1"
+            id="fruit1"
+            class="fruitSelect"
+            required
+          ></select>
+        </label>
+        <label class="myinput">
+          Fruit 2*
+          <select
+            name="fruit2"
+            id="fruit2"
+            class="fruitSelect"
+            required
+          ></select>
+        </label>
+        <label class="myinput">
+          Fruit 3*
+          <select
+            name="fruit3"
+            id="fruit3"
+            class="fruitSelect"
+            required
+          ></select>
+        </label>
+        <label class="myinput">
+          Special Instructions
+          <textarea name="special" id="instructions"></textarea>
+        </label>
+        <h3>Payment for order is taken when the drink is picked up</h3>
+        <label class="myinput">
+          <button type="submit" id="formButton">Complete Order</button>
+        </label>
+      </form>
     </main>
     <footer>
       <div>
@@ -95,7 +125,7 @@
         /></a>
         <p>
           Email Us: bountiful.foods@fake.com <br />
-          Call Us: 123-4567 <br />
+          Call Us: (760) 123-4567 <br />
           Visit Us: 890 N 39th St. Carlsbad, California
         </p>
         <p>Last Modified: <span id="lastModified"></span></p>
