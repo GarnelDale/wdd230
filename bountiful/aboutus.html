@@ -1,2 +1,87 @@
-The About Us page provides historical information about the company and area and a Google Map of Carlsbad California.
-Include at least 2 images on this page that scale down at medium and small resolutions.
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About us page for Bountiful Foods" />
+    <meta name="author" content="Torin Bolander" />
+    <meta
+      property="og:url"
+      content="https://garneldale.github.io/wdd230/bountiful/aboutus.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bountiful Foods - About Us" />
+    <meta
+      property="og:description"
+      content="Bountiful Foods provides only the freshest of fruits, vegetables, and specialty drink blends in Carlsbad, California."
+    />
+    <meta
+      property="og:image"
+      content="https://garneldale.github.io/wdd230/bountiful/images/fruit-smoothie.webp"
+    />
+    <title>Bountiful Foods - About Us</title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section>
+      <a href="index.html"><img src="images/fruit-smoothie.webp" alt="image of a fruit smoothie"></a>
+      <h1>Bountiful Foods</h1>
+    </section>
+    </header>
+    <nav>
+      <button id="burger"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="order.html">Order a Drink</a></li>
+      </ul>
+    </nav>
+    <main>
+      The About Us page provides historical information about the company and
+      area and a Google Map of Carlsbad California. Include at least 2 images on
+      this page that scale down at medium and small resolutions.
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106912.26207661197!2d-117.37501021792797!3d33.13514941197939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702428037950!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+    <footer>
+      <div>
+        <a href="https://www.youtube.com/"
+          ><img src="images/youtube.webp" alt="YouTube channel link"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="images/facebook.webp" alt="Facebook group page link"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/instagram.webp" alt="Instagram feed link"
+        /></a>
+      </div>
+      <div>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>
+          Email Us: bountiful.foods@fake.com <br />
+          Call Us: 123-4567 <br />
+          Visit Us: 890 N 39th St. Carlsbad, California
+        </p>
+        <a href="sources.html">Site Resources</a>
+      </div>
+    </footer>
+  </body>
+</html>

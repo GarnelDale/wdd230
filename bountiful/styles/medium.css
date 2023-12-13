@@ -1,0 +1,14 @@
+@media screen and (min-width: 900px) {
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #burger {
+        display: none;
+    }
+}

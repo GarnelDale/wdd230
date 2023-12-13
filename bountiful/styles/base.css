@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Nanum+Gothic&display=swap');
+
+:root {
+    --main-background: rgb(255, 212, 219);
+    --nav-weight: 700;
+    --main-width: 100%;
+  }
+
+body {
+    font-family: "Mukta", Geneva, sans-serif;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header section img {
+  display: block;
+  max-width: 300px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+nav {
+  font-size: 24px;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  max-width: var(--main-width);
+  padding: 0px;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: var(--main-background);
+}
+
+.navigation li {
+  list-style-type: none;
+  display: none;
+}
+
+.navigation li:hover {
+  background-color: var(--main-background);
+  font-weight: var(--nav-weight);
+}
+
+#burger {
+  display: block;
+  font-size: 2rem;
+  font-weight: var(--nav-weight);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+  color: #000;
+}
+
+#burger::before {
+  content: "≡";
+}
+
+#burger.show::before {
+  content: "X";
+}
+
+.show li {
+  display: block;
+}
+
+main {
+    max-width: var(--main-width);
+}
+
+#callToAction {
+  width: var(--main-width);
+  margin: 10px auto;
+  position: relative;
+}
+
+#callToAction img {
+  width: var(--main-width);
+  height: auto;
+}
+
+#callToAction button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #87d62d;
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.card {
+    margin: 15px;
+    padding: 10px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer a {
+    padding: 0px 15px;
+}

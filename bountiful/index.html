@@ -22,13 +22,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
-      The Home page is a contemporary, exciting landing page providing images of
-      fruit and produce including specialty fruit drinks that are ready to serve
-      and made fresh. The page must contain the following.
+      <section>
+      <a href="index.html"><img src="images/fruit-smoothie.webp" alt="image of a fruit smoothie"></a>
       <h1>Bountiful Foods</h1>
+    </section>
     </header>
     <nav>
       <button id="burger"></button>
@@ -39,17 +45,21 @@
       </ul>
     </nav>
     <main>
+      <div id="callToAction">
       <picture>
         <img
-          src="images/beachbanner.webp"
+          src="images/fruit-banner.webp"
           alt="Beach near Carlsbad, California or maybe of fruits"
         />
-        <button id="smoothie">
-          A call to action to make your own fruit drink mix. This link can link
-          to the 📄Order Drink page.
-        </button>
       </picture>
+      <form action="order.html">
+        <button type="submit" id="smoothie">
+          Order a custom drink today!
+        </button>
+     </form>
+    </div>
       <section class="card" id="about">
+        <img src="images/legoland-small.webp" alt="Image of Legoland California Entrance">
         Summary information about any coastal area or areas in the southern
         California coast of your choosing.
       </section>
@@ -73,22 +83,24 @@
       </section>
     </main>
     <footer>
-      <a href="sources.html">Site Resources</a>
-      <a href="https://www.youtube.com/"
-        ><img src="images/youtube.webp" alt="YouTube channel link"
-      /></a>
-      <a href="https://www.facebook.com/"
-        ><img src="images/facebook.webp" alt="Facebook group page link"
-      /></a>
-      <a href="https://www.instagram.com/"
-        ><img src="images/instagram.webp" alt="Instagram feed link"
-      /></a>
-      <p>Last Modified: <span id="lastModified"></span></p>
+    <div>
+        <a href="https://www.youtube.com/"
+          ><img src="images/youtube.webp" alt="YouTube channel link"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="images/facebook.webp" alt="Facebook group page link"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/instagram.webp" alt="Instagram feed link"
+        /></a>
       <p>
         Email Us: bountiful.foods@fake.com <br />
         Call Us: 123-4567 <br />
         Visit Us: 890 N 39th St. Carlsbad, California
       </p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+      <a href="sources.html">Site Resources</a>
+    </div>
     </footer>
   </body>
 </html>
